@@ -28,7 +28,7 @@ const server = http.createServer((req, res) => {
         }
       );
     }
-  } else if (req.body === 'POST') {
+  } else if (req.method === 'POST') {
     const body = [];
     req.on('data', (data) => {
       body.push(Buffer.from(data));
@@ -40,6 +40,6 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(5000, function () {
-  console.log('Server 5000-portda ishlamoqda...');
+server.listen(4000, function () {
+  console.log('Server 4000-portda ishlamoqda...');
 });

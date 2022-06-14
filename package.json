@@ -9,7 +9,9 @@
   "author": "Uchkun Ashirov",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.0.1"
+    "chalk": "^5.0.1",
+    "mongoose": "^6.3.8",
+    "underscore": "^1.13.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
